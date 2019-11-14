@@ -12,12 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static controller.Main.sceneController;
 
 public class SecondSceneController {
     public static List<Friend> friendList;
     private ObservableList<Friend> myObservableList;
     private static String filePath = "";
+    private SceneController sceneController = SceneController.getObj();
+
 
     public void setFilePath(String filePath) {
         SecondSceneController.filePath = filePath;
@@ -51,12 +52,12 @@ public class SecondSceneController {
 
         try (Scanner input = new Scanner(file)) {
             while (input.hasNext()) {
-                    count++;
+                count++;
 
-                    String str = input.nextLine();
-                    str = str.trim().substring(1,str.length()-1);
-                    String[] parts = str.split("\",\"");
-                    friendList.add(new Friend(""+count,parts[1],parts[0]));
+                String str = input.nextLine();
+                str = str.trim().substring(1, str.length() - 1);
+                String[] parts = str.split("\",\"");
+                friendList.add(new Friend("" + count, parts[1], parts[0]));
             }
         } catch (IOException e) {
             e.printStackTrace();

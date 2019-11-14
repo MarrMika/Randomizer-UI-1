@@ -3,13 +3,13 @@ package controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
-import java.io.File;
 
-import static controller.Main.sceneController;
+import java.io.File;
 
 public class MainSceneController {
     private SecondSceneController secondSceneController = new SecondSceneController();
     private String filePath = null;
+    private SceneController sceneController = SceneController.getObj();
 
 
     @FXML
@@ -35,9 +35,9 @@ public class MainSceneController {
     @FXML
     private void onButtonClickReadFile() {
 
-        if(filePath != null) {
+        if (filePath != null) {
             sceneController.setCurrentSceneState(SceneStates.SECOND_SCENE);
-        }else{
+        } else {
             filePathTextField.setText("Виберіть файл");
         }
 

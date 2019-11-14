@@ -1,25 +1,33 @@
 
-.root{
-    -fx-background-color:#CD853F;
+.root {
+    -fx-background-color: #CD853F;
 }
 
-.label{
-	-fx-font-weight: bold;
-	-fx-margin-left: 25px;
-	-fx-font-family: sans-serif;
-	-fx-color:#608CC8;
-}
-.button{
-	-fx-font-size: 20px;
-	-fx-font-weight: bold;
-	-fx-background-color: #FFFFE0;
-	-fx-background-radius: 30;
+.label {
+    -fx-font-weight: bold;
+    -fx-margin-left: 25px;
+    -fx-font-family: "Comic Sans MS";
+    -fx-color: #608CC8;
 }
 
-.listView{
+.button {
     -fx-font-size: 20px;
-	-fx-font-weight: bold;
-	-fx-background-color: #778899;
-	-fx-background-radius: 30;
+    -fx-font-weight: bold;
+    -fx-background-color: #FFFFE0;
+    -fx-background-radius: 30;
 }
+
+.listView {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-background-color: #778899;
+    -fx-background-radius: 30;
+}
+
+.hyperlink {
+    -fx-text-fill: #0402ff;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #1f0160;
 }
