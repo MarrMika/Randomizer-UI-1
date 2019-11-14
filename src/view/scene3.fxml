@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThirdSceneController">
+
+
+    <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="603.0" text="Ім'я Прізвище" textFill="#111010" textOverrun="CENTER_ELLIPSIS">
+                <VBox.margin>
+                    <Insets left="100.0" top="200.0" />
+                </VBox.margin>
+                <font>
+                    <Font name="Britannic Bold" size="45.0" />
+                </font>
+            </Label>
+         <Label fx:id="URLLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="584.0" text="URL" textFill="#0c19a8">
+            <VBox.margin>
+               <Insets left="110.0" />
+            </VBox.margin>
+            <font>
+               <Font size="19.0" />
+            </font>
+         </Label>
+            <Label text="Вітаємо!" textFill="#fffeff">
+                <VBox.margin>
+                    <Insets left="230.0" top="80.0" />
+                </VBox.margin>
+                <font>
+                    <Font name="Broadway" size="80.0" />
+                </font></Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="30.0" prefWidth="114.0" text="Назад" textFill="#975709">
+                <VBox.margin>
+                    <Insets left="670.0" top="250.0" />
+                </VBox.margin>
+                <font>
+                    <Font name="Bell MT Bold" size="26.0" />
+                </font></Button>
+        </children>
+    </VBox>
+</AnchorPane>

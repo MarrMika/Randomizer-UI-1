@@ -1,0 +1,25 @@
+
+.root{
+    -fx-background-color:#CD853F;
+}
+
+.label{
+	-fx-font-weight: bold;
+	-fx-margin-left: 25px;
+	-fx-font-family: sans-serif;
+	-fx-color:#608CC8;
+}
+.button{
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+	-fx-background-color: #FFFFE0;
+	-fx-background-radius: 30;
+}
+
+.listView{
+    -fx-font-size: 20px;
+	-fx-font-weight: bold;
+	-fx-background-color: #778899;
+	-fx-background-radius: 30;
+}
+}

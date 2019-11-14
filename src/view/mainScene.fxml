@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainSceneController">
+
+<VBox layoutY="106.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="693.0" spacing="25.0">
+   <children>
+         <Label alignment="CENTER" prefHeight="116.0" prefWidth="542.0" text="Randomizer" textFill="#573a27">
+            <font>
+               <Font name="Arial Black" size="78.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="100.0" />
+            </VBox.margin>
+         </Label>
+      <TextField fx:id="filePathTextField" editable="false" prefHeight="55.0" prefWidth="544.0" promptText="Шлях до файлу">
+         <VBox.margin>
+            <Insets left="100.0" top="100.0" />
+         </VBox.margin>
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="549.0">
+         <children>
+               <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onButtonClickSelectFile" prefHeight="63.0" prefWidth="300.0" text="Виберіть файл" textFill="#51320d">
+                  <font>
+                     <Font name="System Bold" size="28.0" />
+                  </font>
+               </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onButtonClickReadFile" prefHeight="63.0" prefWidth="307.0" text="Прочитати " textFill="#573708">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Button>
+         </children>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets left="100.0" />
+            </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="40.0" right="40.0" />
+   </padding>
+</VBox>
+</AnchorPane>
