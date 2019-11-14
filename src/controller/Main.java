@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    public static SceneController sceneController = controller.SceneController.getObj();
+    public static SceneController sceneController = SceneController.getObj();
 
     public static void main(String[] args) {
         launch();
