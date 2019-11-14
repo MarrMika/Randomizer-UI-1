@@ -52,7 +52,7 @@
             </Label>
                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="30.0" prefWidth="114.0" text="Назад" textFill="#975709">
                    <VBox.margin>
-                       <Insets bottom="50.0" left="670.0" top="180.0" />
+                       <Insets bottom="100.0" left="670.0" top="130.0" />
                    </VBox.margin>
                    <font>
                        <Font name="Bell MT Bold" size="26.0" />
