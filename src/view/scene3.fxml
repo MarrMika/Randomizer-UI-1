@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThirdSceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ThirdSceneController">
    <children>
-   
-   
+
+
        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="811.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
            <children>
-            <Label text="Переможець:" textFill="#4a2cb0">
+            <Label text="Переможець:" textFill="WHITE">
                <font>
                   <Font name="Comic Sans MS" size="65.0" />
                </font>
@@ -26,25 +22,38 @@
                   <Insets left="210.0" top="160.0" />
                </VBox.margin>
             </Label>
-               <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="603.0" text="Ім'я Прізвище" textFill="#111010" textOverrun="CENTER_ELLIPSIS">
-                   <VBox.margin>
-                       <Insets left="100.0" top="50.0" />
-                   </VBox.margin>
-                   <font>
-                       <Font name="Britannic Bold" size="45.0" />
-                   </font>
-               </Label>
-            <Hyperlink fx:id="hyperlink" alignment="CENTER" contentDisplay="CENTER" onAction="#onHyperlinkClick" prefHeight="55.0" prefWidth="635.0" text="Hyperlink" textAlignment="CENTER" textFill="#1008ff">
-               <font>
-                  <Font name="Britannic Bold" size="22.0" />
-               </font>
+            <VBox id="winner_box" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                     <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="63.0" prefWidth="603.0" text="Ім'я Прізвище" textFill="#111010" textOverrun="CENTER_ELLIPSIS">
+                         <VBox.margin>
+                             <Insets left="25.0" right="25.0" top="50.0" />
+                         </VBox.margin>
+                         <font>
+                             <Font name="Britannic Bold" size="45.0" />
+                         </font>
+                     </Label>
+                  <Hyperlink fx:id="hyperlink" alignment="CENTER" contentDisplay="CENTER" onAction="#onHyperlinkClick" prefHeight="55.0" prefWidth="635.0" text="Hyperlink" textAlignment="CENTER" textFill="#1008ff">
+                     <font>
+                        <Font name="Britannic Bold" size="22.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="40.0" right="40.0" />
+                     </padding>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
                <VBox.margin>
-                  <Insets left="100.0" right="100.0" />
+                  <Insets left="80.0" right="80.0" top="35.0" />
                </VBox.margin>
-            </Hyperlink>
-               <Label text="Вітаємо!" textFill="#4a2cb0">
+            </VBox>
+               <Label text="Вітаємо!" textFill="WHITE">
                    <VBox.margin>
-                       <Insets left="280.0" top="80.0" />
+                       <Insets left="280.0" top="60.0" />
                    </VBox.margin>
                    <font>
                        <Font name="Comic Sans MS" size="65.0" />
@@ -52,7 +61,7 @@
             </Label>
                <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="30.0" prefWidth="114.0" text="Назад" textFill="#975709">
                    <VBox.margin>
-                       <Insets bottom="100.0" left="670.0" top="130.0" />
+                       <Insets bottom="100.0" left="670.0" top="65.0" />
                    </VBox.margin>
                    <font>
                        <Font name="Bell MT Bold" size="26.0" />

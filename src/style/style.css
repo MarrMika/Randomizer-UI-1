@@ -31,3 +31,9 @@
 .hyperlink:hover {
     -fx-text-fill: #1f0160;
 }
+
+#winner_box {
+    -fx-background-color: #FFFACD;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+}
